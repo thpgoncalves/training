@@ -6,11 +6,11 @@
 
 from typing import List 
 
-def filter_strings(words: List[str]) -> List[str]:
-    filtered_list = list(filter(lambda s: s[0] == 'a', words))
+def filter_strings(words: List[str], x: str) -> List[str]:
+    filtered_list = list(filter(lambda s: s[0] == x, words))
     return filtered_list
 
 words = ["apple", "pineapple", "banana", "plum", "apricot", "grape"]
-res = filter_strings(words)
+res = filter_strings(words, 'b')
 print(f"Old list: {words}")
 print(f"New list: {res}")
