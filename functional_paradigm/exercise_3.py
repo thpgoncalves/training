@@ -5,6 +5,10 @@
 from typing import List
 
 def raise_squared(nums: List[int]) -> List[int]:
+    """
+    Returns a new list with each element squared.
+    Does not modify the original list.
+    """
     new_list = list(map(lambda x: x ** 2, nums))
     return new_list
 

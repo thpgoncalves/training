@@ -6,6 +6,11 @@ from typing import List
 from functools import reduce
 
 def concatenate_strings(words: List[str]) -> str:
+    """
+    Receives a list of strings and returns a single string
+    with all the elements separated by a space.
+    """
+    
     phrase = reduce(lambda acc, s: acc + " " + s, words) if words else ""
     return phrase
 

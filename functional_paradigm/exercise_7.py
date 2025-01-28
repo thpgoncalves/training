@@ -5,6 +5,11 @@
 # Faça de forma funcional, sem usar variáveis mutáveis, laços for ou while.
 
 def fibonacci(n: int) -> int:
+    """
+    Returns the nth term of the Fibonacci sequence recursively.
+    F(0) = 0, F(1) = 1
+    F(n) = F(n-1) + F(n-2) for n > 1
+    """
     if n < 0:
         return f"The index N cant be negative."
     if n == 0:

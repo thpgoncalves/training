@@ -5,6 +5,10 @@
 from typing import List
 
 def filter_even(nums: List[int]) -> List[int]:
+    """
+    Returns a new list with only even values.
+    Does not modify the original list.
+    """
     new_list = list(filter(lambda x: x % 2 == 0, nums))
     return new_list
 

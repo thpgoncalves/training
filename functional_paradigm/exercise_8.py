@@ -7,9 +7,11 @@ from functools import partial
 def calculate_potency(base: int, expoent: int) -> int:
     return base ** expoent
 
+# Partial function for squaring (setting exponent=2)
 expo_2 = partial(calculate_potency, expoent = 2)
 res1 = expo_2(3)
 
+# Partial function for cubing (setting exponent=3)
 expo_3 = partial(calculate_potency, expoent = 3)
 res2 = expo_3(3)
 

@@ -6,6 +6,10 @@
 from typing import Callable
 
 def compose(f: Callable, g: Callable) -> Callable:
+    """
+    Returns a function that applies g(x) and then f
+    i.e. compose(f, g)(x) = f(g(x)).
+    """
     return lambda x: f(g(x))
 
 def increment(n: int) -> int:

@@ -7,6 +7,11 @@
 from typing import List 
 
 def filter_strings(words: List[str], x: str) -> List[str]:
+    """
+    Given a character x. 
+    Searches the string list for a string starting with 'x'.
+    Returns a list of strings that start with 'x'.
+    """
     filtered_list = list(filter(lambda s: s[0] == x, words))
     return filtered_list
 
